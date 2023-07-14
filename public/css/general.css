@@ -14,6 +14,13 @@
     box-sizing: border-box;
     font-family: var(--tipografiaRoboto);
 }
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+body{
+    background-color: #ebebeb;;
+}
 header{
     background-color: var(--colorYellow);
 }
