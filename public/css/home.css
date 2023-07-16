@@ -10,33 +10,33 @@
 .header--nav-search{
     margin: 15px 18px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 .header--nav-search #buscar{
     width: 60%;
-    padding: 4px 4px;
-    margin-bottom: 3px;
+    padding: 4px;
     border: 1px solid var(--colorDarkGray);
     border-radius: 3px;
 }
 .header--nav-search .fa-solid{
     background-color: white;
-    width: 25px;
-    text-align: center;
-    padding: 3px;
+    padding: 4px;
     border: 1px solid var(--colorDarkGray);
     border-radius: 4px;
+    margin-left: 5px;
 }
-
 .header--nav-target{
     display: flex;
     justify-content: center;
 }
 .header--nav-target p{
     color: black;
-    font-weight: 800;
+    font-weight: 600;
+    font-size: 0.875rem;
 }
-
+.header--nav-links{
+    display: none;
+}
 .header--nav-links ul{
     margin-top: 20px;
 }
@@ -51,42 +51,54 @@
     justify-content: center;
     margin-top: 20px;
 }
-.header--nav-bars div{
-    background-color: #0044aa;
-    padding: 8px 10px;
-    border-radius: 5px;
-    margin:0 auto;
-}
 .header--nav-bars i{
     color: var(--colorLightGray);
-    font-size: 2em;
+    font-size: 1.5rem;
+    background-color: var(--colorSkyBlue);
+    padding: 10px;
+    border-radius: 5px;
 }
 /* MAIN */
+.main__section-banner img{
+    width: 100%;
+}
 .main__section h3{
     font-family: var(--tipografiaRoboto);
     font-weight: 900;
     font-size: 1.2rem;
     color: gray;
+    margin-top: 10px;
 }
 .main__section--article img{
     width: 100%;
+    padding: 15px;
 }
 .main__section--article{
-    margin: 10px 0;
+    margin-top: 10px;
+    background-color: white;
 } 
 .main__section--article-box{
-    margin-top: -2px;
-    background-color: white;
+    border-top: 1px solid var(--colorLightGray);
     padding: 15px;
-    line-height: 20px;
 }
 .main__section--article-box i{
-    border: 1px solid #23bf3f;
+    border: 1px solid var(--colorGreen);
     border-radius: 50%;
     padding: 8px 7px;
-    color: #23bf3f;
+    color: var(--colorGreen);
 }
-
+.box-description p:first-child{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.box-description p:last-child{
+    font-size: 1rem;
+    color: var(--colorGreen);
+    font-weight: 600;
+}
+.main__section--article-box h5{
+    margin-top: 20px;
+}
 
 /* FOOTER */
 
@@ -115,4 +127,30 @@ small{
     margin-left: 20px;
     color: var(--colorDarkGray);
     font-size: 12px;
-} 
+}
+
+@media (min-width: 361px){
+    /* HEADER */
+    .header--nav-search #buscar{
+        width: 40%;
+    }
+    .home__header--nav .header--nav-links{
+        display: block;
+        margin:20px 0 0 10px;
+    }
+    .header--nav-links ul{
+        margin-top: 0;
+    }
+    .header--nav-bars{
+        display: none;
+    }
+    /* MAIN */
+    .main__section--article{
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+    }
+}
+@media (min-width: 769px){
+    .header--nav-search #buscar{
+        width: 28%;
+    }
+}
