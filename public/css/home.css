@@ -1,41 +1,53 @@
 /* HEADER */
 .home__header{
-    padding: 20px 0;
+    padding: 20px;
+}
+.header--nav-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    width: 100%;
 }
 .header--nav-logo{
-    width: 37%;
-    margin-left: 30px;
+    width: 40%;
+    /* margin-left: 30px; */
+    /* background-color: orange; */
 }
 
 .header--nav-search{
     margin: 15px 18px;
-    background: rebeccapurple;
+    /* background: rebeccapurple; */
     position: relative;
-    width: 60%;
+    width: 40%;
+    /* background-color: rebeccapurple; */
     /* display: flex;
     align-items: center; */
 }
 .header--nav-search #buscar{
     width: 100%;
-    padding: 4px;
+    padding: 10px 5px;
     padding-right: 15px;
-    /* border: 1px solid var(--colorDarkGray); */
-    /* border-radius: 3px; */
+    border: none;
+    border-radius: 3px;
     /* position: relative; */
 }
 .header--nav-search .fa-solid{
     /* background-color: white;
     margin-left: 5px; */
-    padding: 4px;
+    padding: 10px 2px;
     /* border: 1px solid var(--colorDarkGray); */
     /* border-top-left-radius: 4px; */
     position: absolute;
-    top: 2px;
+    top: 0;
     right: 0;
 }
 .header--nav-target{
+    width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: red; */
 }
 .header--nav-target p{
     color: black;
@@ -44,14 +56,6 @@
 }
 .header--nav-links{
     display: none;
-}
-.header--nav-links ul{
-    margin-top: 20px;
-}
-.header--nav-links ul li a{
-    color: black;
-    margin-right: 10px;
-    font-weight: bold;
 }
 
 .header--nav-bars{
@@ -88,21 +92,35 @@
 .main__section--article-box{
     border-top: 1px solid var(--colorLightGray);
     padding: 15px;
+    position: relative;
+    /* background-color: aqua; */
 }
 .main__section--article-box i{
     border: 1px solid var(--colorGreen);
     border-radius: 50%;
     padding: 8px 7px;
     color: var(--colorGreen);
+    position: absolute;
+    background-color: white;
+    right: 20px;
+    top: -20px;
+}
+.box-description{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    /* background-color: red; */
 }
 .box-description p:first-child{
     font-size: 1.2rem;
     font-weight: 900;
+    /* width: 30%; */
 }
 .box-description p:last-child{
     font-size: 1rem;
     color: var(--colorGreen);
     font-weight: 600;
+    /* width: 70%; */
 }
 .main__section--article-box h5{
     margin-top: 20px;
@@ -139,32 +157,87 @@ small{
 
 @media (min-width: 481px){
     /* HEADER */
-    .header--nav-search{
+    /* .header--nav-search{
         width: 40%;;
+    } */
+    .header--nav-container{
+        justify-content: space-between;
+        align-items: center;
     }
+    .header--nav-container img, .header--nav-search,.header--nav-target{
+        width: 30%;
+    }
+    .header--nav-container img{
+        margin-left:0;  
+    }
+    
     .header--nav-search #buscar{
         width: 100%;
     }
+    .header--nav-target p{
+        font-size: 0.6rem;
+    }
     .home__header--nav .header--nav-links{
-        display: block;
-        margin:20px 0 0 10px;
+        display: flex;
+        justify-content: space-between;
+        margin:20px 0 0 0;
     }
     .header--nav-links ul{
-        margin-top: 0;
+        display: flex;
+        /* background-color: red; */
+    }
+    .header--nav-links ul li{
+        margin-right: 8px;
+    }
+    .header--nav-links ul li a{
+        font-size: 0.6rem;
+        color: black;
+        margin-right: 3px;
+        /* width: 15%; */
     }
     .header--nav-bars{
         display: none;
     }
     /* MAIN */
+    .main__section{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .main__section h3{
+        width: 100%;
+    }
     .main__section--article{
+        width: 48%;
         box-shadow: 0 0 10px rgb(100, 100, 100);
     }
 }
 @media (min-width: 769px){
+    /* HEADER */
     .header--nav-search{
         width: 30%;
     }
     .header--nav-search #buscar{
         width: 100%;
+    }
+    .header--nav-container img, .header--nav-search,.header--nav-target{
+        width: 31%;
+    }
+    .header--nav-target{
+        justify-content: end;
+    }
+    .header--nav-target p{
+        font-size: 1rem;
+    }
+    .header--nav-links ul li a{
+        font-size: 1rem;
+        /* color: black; */
+        /* margin-right: 3px; */
+        /* width: 15%; */
+    }
+    /* MAIN */
+    .main__section--article{
+        width: 23%;
+        /* box-shadow: 0 0 10px rgb(100, 100, 100); */
     }
 }
