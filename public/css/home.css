@@ -9,21 +9,29 @@
 
 .header--nav-search{
     margin: 15px 18px;
-    display: flex;
-    align-items: center;
+    background: rebeccapurple;
+    position: relative;
+    width: 60%;
+    /* display: flex;
+    align-items: center; */
 }
 .header--nav-search #buscar{
-    width: 60%;
+    width: 100%;
     padding: 4px;
-    border: 1px solid var(--colorDarkGray);
-    border-radius: 3px;
+    padding-right: 15px;
+    /* border: 1px solid var(--colorDarkGray); */
+    /* border-radius: 3px; */
+    /* position: relative; */
 }
 .header--nav-search .fa-solid{
-    background-color: white;
+    /* background-color: white;
+    margin-left: 5px; */
     padding: 4px;
-    border: 1px solid var(--colorDarkGray);
-    border-radius: 4px;
-    margin-left: 5px;
+    /* border: 1px solid var(--colorDarkGray); */
+    /* border-top-left-radius: 4px; */
+    position: absolute;
+    top: 2px;
+    right: 0;
 }
 .header--nav-target{
     display: flex;
@@ -129,10 +137,13 @@ small{
     font-size: 12px;
 }
 
-@media (min-width: 361px){
+@media (min-width: 481px){
     /* HEADER */
+    .header--nav-search{
+        width: 40%;;
+    }
     .header--nav-search #buscar{
-        width: 40%;
+        width: 100%;
     }
     .home__header--nav .header--nav-links{
         display: block;
@@ -150,7 +161,10 @@ small{
     }
 }
 @media (min-width: 769px){
+    .header--nav-search{
+        width: 30%;
+    }
     .header--nav-search #buscar{
-        width: 28%;
+        width: 100%;
     }
 }
