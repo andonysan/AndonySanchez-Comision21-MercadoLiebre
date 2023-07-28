@@ -1,2 +1,2 @@
 # Andony Sanchez
-<p>bienvenido al Diseño adaptativo, en esta version se podra observar el cambio en distintos dispositivos</p>
+<p>En esta rama se podra visualizar el formulario de Login y de registro</p>

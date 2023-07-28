@@ -1,0 +1,121 @@
+body.register{
+    background-color: #fff;;
+}
+/* formulario estilos */
+.form__box{
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width:320px;
+    padding: 2%;
+    margin: 15px auto;
+    background-color: var(--colorLightGray);
+    box-shadow: 0 0 20px var(--colorLightGray);
+    border-radius: 6px;
+}
+.form__box h3{
+    font-size: 1.2rem;
+    color: var(--colorDarkGray);
+    /* font-weight: 900; */
+}
+.form__box h4{
+    color: var(--colorDarkGray);
+    width: 100%;
+}
+.form__box input{
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    outline: none;
+}
+.form__box label{
+    font-size: 0.9rem;
+}
+.form__box--date{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form__box--usuario{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.box--usuario-radio{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.form__box--usuario label:first-child{
+    margin-right: 10px;
+}
+.form__box--intereses-checkbox{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+/* ------------------ */
+.form__box input[type=file]{
+    display: none;
+}
+.form__box--file{
+    height: 45px;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+/* -------------------- */
+.form__box--button{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.form__box--button button[type=reset]{
+    background-color: var(--colorDarkGray);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    /* font-weight: 600; */
+    color: #fff;
+    cursor: pointer;
+}
+.form__box--button button[type=submit]{
+    font-size: 1rem;
+    background-color: var(--colorSkyBlue);
+    color: var(--colorLightGray);
+    padding: 10px 20px;
+    border: none;
+    letter-spacing: 2px;
+    /* font-weight: 600; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* footer */
+footer{
+    background-color: var(--colorLightGray);
+}
+@media (min-width:481px) {
+    
+}
+@media (min-width:769px) {
+    .form__box{
+        width: 400px;
+    }
+    .form__box h3{
+        font-size: 1.5rem;
+    }
+    .form__box input{
+        /* background-color: red; */
+        font-size: 1rem;
+    }
+}
