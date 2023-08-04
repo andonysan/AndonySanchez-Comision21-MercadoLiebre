@@ -58,18 +58,22 @@
 }
 /* --------------------- */
 
-/* .header--nav-links{
-    display: none;
-    height: 0;
-    overflow: hidden;
-    transition: all 1s ease;
-} */
 .showMenu{
+    margin-top: 20px;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s ease;
 }
 /* ----------------------- */
-.header--nav-links li i{
-    font-size: 0.8rem;
+
+.showMenu li a{
+    font-size: 1rem;
+    color: black;
+}
+.showMenu li a:hover{
+    border-left: 2px solid gray;
 }
 
 .header--nav-bars{
@@ -135,17 +139,21 @@
 }
 .box-description{
     display: flex;
+    /* flex-wrap: wrap; */
     align-items: center;
-    gap: 10%;
+    gap: 15%;
 }
 .box-description p:first-child{
     font-size: 1.2rem;
     font-weight: 900;
+    color: black;
+    width: 30%;
 }
 .box-description p:last-child{
     font-size: 1rem;
     color: var(--colorGreen);
     font-weight: 600;
+    /* width: 70%; */
 }
 .main__section--article-box h5{
     margin-top: 20px;
@@ -229,12 +237,16 @@ small{
     }
     .header--nav-links ul li{
         margin-right: 8px;
+        cursor: pointer;
     }
     .header--nav-links ul li a{
         font-size: 0.62rem;
         color: black;
         margin-right: 3px;
         font-weight: 600;
+    }
+    .header--nav-links ul li a:hover{
+        color: rgba(0, 0, 0, 0.815);
     }
     .header--nav-bars{
         display: none;
@@ -263,6 +275,7 @@ small{
 @media (min-width: 769px){
     /* HEADER */
     .header--nav-container{
+        /* display: flex; */
         justify-content: space-between;
     }
     .header--nav-search{
@@ -289,5 +302,22 @@ small{
     /* MAIN */
     .main__section--article{
         width: 23%;
+    }
+    .box-description{
+        justify-content: space-between;
+    }
+    /* Footer */
+    .foooter--content-section{
+        /* display:flex; */
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 20px
+        /* background-color: red; */
+    }
+    .foooter--content-section .conotent-section-article{
+        width: 23%;
+        /* background-color: blue; */
     }
 }
